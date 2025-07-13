@@ -25,11 +25,6 @@ Adapted the code to handle APIs and C language features not present in v3.18.
 - **Unavailable Macros:** Replaced macros like `GENMASK`, `FIELD_GET`, and `clamp_val` with direct bitwise operations or `min_t`/`max_t` equivalents.
 - **Regmap Helpers:** Replaced newer helper functions (e.g., `regmap_set_bits`) with the core `regmap_update_bits` API.
 
-### 3. I2C Device Detection
-Added a legacy I2C auto-detection mechanism for systems that do not use Device Tree.
-
-- Implemented a `.detect` function and an `.address_list` in the `i2c_driver` structure to allow the driver to probe for the device at specified I2C addresses.
-
 ## Compilation and Installation
 
 ### Dependencies
