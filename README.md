@@ -4,12 +4,6 @@
 
 This project provides a port of the MAX31760 fan speed controller driver from the modern Linux kernel (v6.14) to the legacy v3.18 kernel environment. This allows the hardware to be used on older embedded systems or distributions running the 3.18 kernel.
 
-## File Structure
-
-- `v6.14_max31760.c`: Original v6.14 kernel driver
-- `max31760.c`: Ported driver for v3.18.24 kernel
-- `README.md`: This document
-
 ## Major Porting Changes
 
 ### 1. Hwmon Registration (Modern vs. Legacy)
